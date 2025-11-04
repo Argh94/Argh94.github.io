@@ -15,7 +15,7 @@
 ---
 
 ## پیش‌نمایش زنده  
-[https://argh94.github.io/terminal-portfolio](https://argh94.github.io/terminal-portfolio) *(یا روی هر دامنه دلخواه میزبانی کنید)*
+[https://argh94](https://argh94.github.io/) *(یا روی هر دامنه دلخواه میزبانی کنید)*
 
 ---
 
