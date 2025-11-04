@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <title>Argh94 - Ultimate Terminal Portfolio</title>
+  <meta name="description" content="Argh94's ultimate interactive terminal portfolio">
+  <meta name="keywords" content="portfolio, terminal, developer">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#00ff00">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="data:application/manifest+json,{&quot;name&quot;:&quot;Argh94 Portfolio&quot;,&quot;short_name&quot;:&quot;Argh94&quot;,&quot;description&quot;:&quot;Ultimate Terminal Portfolio&quot;,&quot;start_url&quot;:&quot;/&quot;,&quot;display&quot;:&quot;standalone&quot;,&quot;background_color&quot;:&quot;#000000&quot;,&quot;theme_color&quot;:&quot;#00ff00&quot;,&quot;icons&quot;:[{&quot;src&quot;:&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>&quot;,&quot;sizes&quot;:&quot;192x192&quot;,&quot;type&quot;:&quot;image/svg+xml&quot;}]}">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- External CSS File -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-theme="auto">
+  <!-- API Status Indicator -->
+  <div class="api-status" id="api-status">
+    <span class="api-dot">●</span>
+    <span id="api-text">Checking...</span>
+  </div>
+
+  <!-- Background Animation -->
+  <div id="background-animation"></div>
+  
+  <!-- Main Header -->
+  <header class="main-header" id="main-header">
+    <!-- Header Top Section -->
+    <div class="header-top">
+      <div class="logo">
+        <span>👨‍💻</span>
+        <span>Argh94 - Ultimate Terminal Portfolio</span>
+      </div>
+      
+      <!-- Theme and Animation Controls -->
+      <div class="theme-controls">
+        <select id="theme-selector" class="theme-selector" title="Select theme">
+          <option value="auto">🌙 Auto (System)</option>
+          <option value="green">🟢 Classic Matrix</option>
+          <option value="blue">🔵 Hacker Blue</option>
+          <option value="cyber-blue">⚡ Cyber Blue</option>
+          <option value="matrix-blue">🌊 Matrix Blue</option>
+        </select>
+        
+        <div class="animation-toggle" id="animation-toggle" title="Toggle animations">
+          <span>✨ Animations</span>
+          <div class="toggle-switch active"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <button class="nav-item active" data-section="portfolio" title="Portfolio Home">
+        🏠 Portfolio
+      </button>
+      <button class="nav-item" data-section="about" title="About Argh94">
+        👤 About
+      </button>
+      <button class="nav-item" data-section="skills" title="Technical Skills">
+        🛠️ Skills
+      </button>
+      <button class="nav-item" data-section="projects" title="View Projects">
+        🚀 Projects
+      </button>
+      <button class="nav-item" data-section="help" title="Help & Commands">
+        ❓ Help
+      </button>
+      <button class="nav-item" data-section="analytics" title="Command Analytics">
+        📊 Analytics
+      </button>
+      <button class="nav-item" data-section="github" title="GitHub Repositories">
+        🐱 GitHub
+      </button>
+      <button class="nav-item" data-section="contact" title="Contact Information">
+        📞 Contact
+      </button>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="content-container" id="main-content">
+    <!-- Terminal -->
+    <section class="terminal-container">
+      <div class="terminal">
+        <!-- SSH Overlay -->
+        <div class="ssh-overlay" id="ssh-overlay">
+          <div class="ssh-connection">
+            <h3>🔐 Connecting to argh94.dev...</h3>
+            <div class="ssh-loading">
+              <div class="ssh-progress"></div>
+            </div>
+            <p id="ssh-status">Establishing secure connection</p>
+          </div>
+        </div>
+
+        <div class="header">
+          <div class="title" id="terminal-title">root@portfolio: ~</div>
+          <div class="buttons">
+            <span class="btn minimize" title="Minimize"></span>
+            <span class="btn maximize" title="Maximize"></span>
+            <span class="btn close" title="Close"></span>
+          </div>
+        </div>
+        <div class="body" id="terminal-body">
+          <div class="line">
+            <span class="prompt">root@portfolio:~$</span>
+            <span class="typing" id="welcome-msg"></span>
+          </div>
+        </div>
+        <div class="input-line">
+          <span class="prompt">root@portfolio:~$</span>
+          <input 
+            type="text" 
+            id="command-input" 
+            autocomplete="off" 
+            autocapitalize="off" 
+            spellcheck="false"
+            placeholder="Type a command or click on navigation buttons above..."
+          />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- External JavaScript File - MUST BE AT THE END -->
+  <script src="script.js"></script>
+</body>
+</html>
