@@ -42,7 +42,7 @@
 
 ## 🎨 تم‌های برنامه
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 30px 0;">
+<div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin: 20px 0;">
   <img src="https://github.com/Argh94/Argh94.github.io/blob/main/img/Hacker%20blue.jpg" alt="Hacker Blue" width="280"/>
   <img src="https://github.com/Argh94/Argh94.github.io/blob/main/img/Cyber%20blue.jpg" alt="Cyber Blue" width="280"/>
   <img src="https://github.com/Argh94/Argh94.github.io/blob/main/img/Classic%20matrix.jpg" alt="Classic Matrix" width="280"/>
